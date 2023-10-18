@@ -1,12 +1,17 @@
+import { Navbar } from './component/Navbar/Navbar';
+import { Suspense } from 'react';
 import './index.scss';
-import { Counter } from './component/Counter';
+import { Background } from './component/Background/Background';
+import { Resume } from './component/Resume/Resume';
 const App = () => {
     return (
-        <>
-            <h1>Hello World</h1>
-            <p>My name is Fornara</p>
-            <Counter />
-        </>
+        <div className={"app"}>
+            <Suspense fallback={<div>Loading...</div>}>
+                <Background />
+                <Navbar />
+                <Resume />
+            </Suspense>
+        </div>
     );
 }
 export default App;
