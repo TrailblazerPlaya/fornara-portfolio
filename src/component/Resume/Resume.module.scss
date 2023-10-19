@@ -3,10 +3,24 @@
     font-weight: 700;
     font-size: 25px;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     padding-left: 50px;
     padding-right: 50px;
+}
+
+.ResumeAbout {
+    color: white;
+}
+
+.ResumeSkills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 350px;
+    width: 450px;
+    color: white;
+    border: 1px solid white;
+    padding: 10px;
 }
