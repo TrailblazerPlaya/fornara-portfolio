@@ -22,10 +22,23 @@ export function buildLoader({ isDev }: BuildOptions): webpack.RuleSetRule[] {
         ],
     };
 
+    const fileLoader = {
+        test: /\.(png|jpe?g|gif|woff2|woff)$/i,
+        use: [
+          {
+            loader: "file-loader",
+            options: {
+              name: "[name].[ext]",
+              outputPath: "assets/",
+            },
+          },
+        ],
+      };
+
     const typescriptLoader = {
         test: /\.tsx?$/,
         use: "ts-loader",
         exclude: /node_modules/,
     };
-    return [typescriptLoader, cssLoader];
+    return [typescriptLoader, cssLoader, fileLoader];
 }
