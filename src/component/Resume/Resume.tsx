@@ -40,7 +40,6 @@ export const Resume = () => {
         {selectedSkill && (
           <div className={cls.ModalOverlay} onClick={handleOverlayClick}>
             <div className={cls.Modal}>
-              <img className={cls.ResumeIcons} src={selectedSkill.icon} alt={selectedSkill.name} />
               <h4>{selectedSkill.name}</h4>
               <p>{selectedSkill.description}</p>
               <button onClick={closeModal}>Закрыть</button>
