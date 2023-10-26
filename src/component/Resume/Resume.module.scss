@@ -10,6 +10,11 @@
     padding-right: 50px;
 }
 
+.ResumeLi:hover {
+    list-style: none;
+    cursor: pointer;
+}
+
 .ResumeAbout {
     color: white;
 }
@@ -29,8 +34,43 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    max-width: 100px;
-    max-height: 100px;
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.ResumeContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.ResumeClose {
+    color: white;
+    font-size: 15px;
+    font-weight: 700;
+    background-color: rgb(8, 28, 53);
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.ResumeClose:hover {
+    cursor: pointer;
+    background-color: rgb(29, 12, 43);
+    transition: 0.3s;
+}
+
+.ResumeDescription {
+    font-size: 23px;
+    font-weight: 700;
+    color: white;
+}
+
+.ResumeName {
+    color: white;
+    font-weight: 700;
+    font-size: 35px;
 }
 
 .ModalOverlay {
@@ -45,6 +85,8 @@
   
 .Modal {
     position: fixed;
+    min-height: 300px;
+    min-width: 500px;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);

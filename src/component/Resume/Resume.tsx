@@ -31,7 +31,7 @@ export const Resume = () => {
             <h4>Кликабельно</h4>
             <hr />
             {skills.map((skill) => (
-              <li key={skill.name} onClick={() => handleSkillClick(skill)}>
+              <li className={cls.ResumeLi} key={skill.name} onClick={() => handleSkillClick(skill)}>
                 {skill.name}
               </li>
             ))}
@@ -40,10 +40,12 @@ export const Resume = () => {
         {selectedSkill && (
           <div className={cls.ModalOverlay} onClick={handleOverlayClick}>
             <div className={cls.Modal}>
-              <img className={cls.ResumeIcons} src={selectedSkill.icon} alt={selectedSkill.name} />
-              <h4>{selectedSkill.name}</h4>
-              <p>{selectedSkill.description}</p>
-              <button onClick={closeModal}>Закрыть</button>
+              <div className={cls.ResumeContainer}>
+                <img className={cls.ResumeIcons} src={selectedSkill.icon} alt={selectedSkill.name} />
+                <h4 className={cls.ResumeName}>{selectedSkill.name}</h4>
+                <button className={cls.ResumeClose} onClick={closeModal}>Закрыть</button>
+              </div>
+              <p className={cls.ResumeDescription}>{selectedSkill.description}</p>
             </div>
           </div>
         )}

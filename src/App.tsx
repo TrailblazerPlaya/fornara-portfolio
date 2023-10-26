@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import "./index.scss";
 import { Background } from "./component/Background/Background";
 import { Resume } from "./component/Resume/Resume";
+import { Footer } from "./component/Footer/Footer";
 const App = () => {
     return (
         <div className={"app"}>
@@ -11,6 +12,7 @@ const App = () => {
                 <div className={"container"}>
                     <Navbar />
                     <Resume />
+                    <Footer />
                 </div>
             </Suspense>
         </div>
