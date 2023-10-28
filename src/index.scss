@@ -15,9 +15,23 @@ h1 {
     margin: 20px;
 }
 
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
     background: #010b11;
     opacity: 0.9;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    min-width: 100vh;
+}
+
+@media (min-width: 2560px) {
+    .container {
+        margin-top: 100px;
+    }
 }

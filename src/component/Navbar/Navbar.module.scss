@@ -18,3 +18,13 @@
     color: red;
     transition: 0.3s;
 }
+
+.NavLinks a {
+    padding-left: 15px;
+}
+
+@media (min-width: 2560px) {
+    .Navbar {
+        font-size: 65px;
+    }
+  }
