@@ -126,6 +126,8 @@
 @media (min-width: 2560px) {
     .Resume {
         font-size: 60px;
+        text-align: center;
+        margin-top: 200px;
     }
 
     .ResumeSkills {
@@ -159,4 +161,117 @@
     .ResumeName { 
         font-size: 80px; 
     } 
+    .ResumeExpiriens {
+        border: 1px solid;
+        border-radius: 2px;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 80px;
+    }
+    hr {
+        display: none;
+    }
 }
+
+@media screen and (max-width: 480px) {
+    .Resume {
+        font-size: 25px;
+        display: block;
+        align-items: center;
+        max-width: 480px;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .ResumeAbout {
+        max-width: 380px;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .ResumeSkills {
+        width: 380px;
+        border: none;
+        padding: 5px;
+    }
+
+    .ResumeExpiriens {
+        border: 1px solid;
+        border-radius: 2px;
+    }
+
+    .Modal {
+        min-height: 500px;
+        min-width: 375px;
+        width: 375px;
+        padding: 20px;
+        border-radius: 5px;
+        z-index: 10000; 
+    }
+
+    .ResumeDescription {
+        font-size: 19px;
+        font-weight: 700;
+        color: white;
+        text-align: center;
+    }
+    
+    .ResumeName {
+        font-size: 20px;
+        margin-left: 15px;
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Ваши стили для планшетов */
+    .Resume {
+        font-size: 25px;
+        display: block;
+        align-items: center;
+        width: 100%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    .ResumeAbout {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    hr {
+        display: none;
+    }
+
+    .ResumeSkills {
+        padding: 5px;
+        font-size: 30px;    
+        margin: 0 auto;    
+    }
+
+    .ResumeExpiriens {
+        border: 1px solid;
+        border-radius: 2px;
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1120px) {
+    /* Ваши стили для ноутбуков и десктопов */
+    .ResumeExpiriens {
+        border: 1px solid;
+        border-radius: 2px;
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 20px;
+    }
+    .ResumeAbout {
+        margin-right: 10px;
+    }
+}  

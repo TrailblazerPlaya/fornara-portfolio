@@ -31,7 +31,37 @@ h1 {
 }
 
 @media (min-width: 2560px) {
+    
     .container {
         margin-top: 100px;
     }
 }
+
+@media screen and (max-width: 480px) {
+    
+    .container {
+        margin: 0;
+        margin-top: 0;
+        width: 370px;
+        min-height: 670px;
+        min-width: 375px;
+        max-width: 400px;
+        margin-bottom: 10px;
+
+    }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    /* Ваши стили для планшетов */
+    .container {
+        margin: 0;
+        margin-top: 0;
+        min-height: 670px;
+        min-width: 375px;
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    /* Ваши стили для ноутбуков и десктопов */
+}  

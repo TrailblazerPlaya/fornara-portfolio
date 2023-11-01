@@ -51,7 +51,7 @@ export const Resume = () => {
         </div>
         <div className={cls.ResumeSkills}>
           <ul>
-            <h4>Stack</h4>
+            <h4>Stack (clickable)</h4>
             <hr />
             {skills.map((skill) => (
               <li className={cls.ResumeLi} key={skill.name} onClick={() => handleSkillClick(skill)}>
