@@ -8,10 +8,12 @@ const App = () => {
     return (
         <div className={"app"}>
             <Suspense fallback={<div>Loading...</div>}>
-                <Header />
-                <About />
-                <Portfolio />
-                <Contact />
+                <div className={"container"}>
+                    <Header />
+                    <About />
+                    <Portfolio />
+                    <Contact />
+                </div>
             </Suspense>
         </div>
     );

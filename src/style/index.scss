@@ -2,7 +2,7 @@
 @import "global";
 @import "normal";
 .app {
-    font-size: 30px;
+    font-size: var(--font-size-m);
     font-family: 'Open Sans', sans-serif;
     font-family: 'Ubuntu', sans-serif;
     font-family: 'Oxygen', sans-serif;
@@ -10,6 +10,5 @@
 
 h1 {
     text-align: center;
-    margin: 20px;
     font-size: var(--font-size-l);
 }
