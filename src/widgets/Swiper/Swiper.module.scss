@@ -4,3 +4,19 @@
     background: var(--bg-color);
     color: var(--primary-color);
 }
+
+.SwiperSlide {
+    display: flex;
+}
+
+.Hero {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80vh;
+    z-index: 5;
+    max-width: 550px;
+    filter: contrast(90%);
+    pointer-events: none;
+    opacity: 1;
+}

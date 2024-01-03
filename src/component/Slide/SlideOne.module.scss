@@ -1,0 +1,29 @@
+.SlideOne {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.SlideContainer {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 40%;
+}
+
+.About h1 {
+    font-size: var(--font-size-xxl);
+    text-align: left;
+}
+
+.About h2 {
+    font-size: var(--font-line-m);
+    text-align: left;
+}
+
+.Swipe {
+    position: relative;
+    right: 0;
+    writing-mode: vertical-lr;
+}
