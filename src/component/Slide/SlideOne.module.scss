@@ -1,29 +1,120 @@
 .SlideOne {
     position: relative;
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
 .SlideContainer {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     position: relative;
-    top: 40%;
+    top: 10%;
 }
 
-.About h1 {
+.Links {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size-l);
+    text-align: left;
+    margin: 0 50px;
+}
+
+.Links a {
+    color: var(--primary-color);
+}
+
+.About {
+    display: flex;
+    flex-direction: column;
+    margin: 0 50px;
     font-size: var(--font-size-xxl);
     text-align: left;
 }
 
-.About h2 {
-    font-size: var(--font-line-m);
-    text-align: left;
+.AboutDazed {
+    display: flex;
+    font-size: var(--font-size-xl);
+}
+
+.AboutFrontend {
+    display: flex;
+}
+
+.AboutName {
+    display: flex;
+    font-size: var(--font-size-xl);
+}
+
+.AboutYear {
+    font-size: var(--font-size-xl);
+}
+
+.AboutLocation {
+    display: flex;
+    font-size: var(--font-size-xl);
+}
+
+.LastName {
+    display: flex;
+    font-size: var(--font-size-xl);
+    padding-left: 15px;
+}
+
+.Maze {
+    padding-left: 15px;
+}
+
+.Dev {
+    padding-left: 15px;
+}
+
+.Ft {
+    padding-left: 15px;
 }
 
 .Swipe {
-    position: relative;
-    right: 0;
-    writing-mode: vertical-lr;
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.Stack {
+    display: flex;
+    flex-direction: column;
+    font-size: var(--font-size-l);
+    margin: 0 50px;
+    margin-top: 25px;
+}
+
+.Stack h1 {
+    margin: 0;
+}
+
+.StackContainerOne {
+    display: flex;
+    justify-content: left;
+}
+
+.StackContainerTwo {
+    display: flex;
+    justify-content: left;
+}
+
+.StackItem {
+    padding: 15px;
+    padding-left: 0;
+}
+
+.StackTitle {
+    width: 40vh;
+    display: flex;
+    justify-content: left;
+    margin: 0 50px;
+    border-bottom: 1px solid var(--primary-color);
+}
+
+.Russia {
+    padding-left: 15px;
 }

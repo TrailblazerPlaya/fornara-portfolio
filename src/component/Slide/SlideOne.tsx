@@ -1,44 +1,105 @@
 import { gsap } from "gsap";
 import { useLayoutEffect, useRef } from "react";
-
 import cls from "./SlideOne.module.scss";
-import BlinkingCursor from "../../widgets/BlinkingCursor/BlinkingCursor";
-
 export const SlideOne = () => {
-    const blobRef = useRef();
+    const rightRef = useRef();
+
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
-            gsap.fromTo(
-                "h1, h2",
-                { opacity: 0, x: -100 },
-                { opacity: 1, x: 0, duration: 1, delay: 2 },
+            gsap.from(
+                "#dazed, #links, #fron, #dev, #nik, #chu, #year, #city, #ft, #maze, #end, #lop, #lay, #kov, #rus, #react, #stack",
+                {
+                    rotationY: 36,
+                    opacity: 0,
+                    duration: 2.6,
+                    yPercent: -100,
+                    stagger: 0.1,
+                    ease: "Expo.easeOut",
+                },
             );
-        }, blobRef);
+        }, rightRef);
         return () => ctx.revert();
     }, []);
 
     return (
         <div className={cls.SlideOne}>
-            <div className={cls.SwiperSlideOne} ref={blobRef}>
+            <div className={cls.SwiperSlideOne} ref={rightRef}>
                 <div className={cls.SlideContainer}>
                     <div className={cls.About}>
-                        <BlinkingCursor />
-                        <h2>Dazed in the maze</h2>
-                        <h1>Frontend Developer ft.React</h1>
-                        <h1>Nikolay Chubakov</h1>
-                        <h2>22 y.o</h2>
-                        <h2>Saratov, Russia</h2>
+                        <div className={cls.AboutDazed}>
+                            <div id="dazed">
+                                <span>Dazed in</span>
+                            </div>
+                            <div className={cls.Maze} id="maze">
+                                <span>the maze</span>
+                            </div>
+                        </div>
+                        <div className={cls.AboutFrontend}>
+                            <div id="fron">
+                                <span>Fron</span>
+                            </div>
+                            <div id="end">
+                                <span>tend</span>
+                            </div>
+                            <div className={cls.Dev} id="dev">
+                                <span>Deve</span>
+                            </div>
+                            <div id="lop">
+                                <span>loper</span>
+                            </div>
+                            <div className={cls.Ft} id="ft">
+                                <span>ft.</span>
+                            </div>
+                            <div id="react">
+                                <span>React</span>
+                            </div>
+                        </div>
+                        <div className={cls.AboutName}>
+                            <div id="nik">
+                                <span>Nik</span>
+                            </div>
+                            <div id="lay">
+                                <span>olay</span>
+                            </div>
+                            <div id="chu" className={cls.LastName}>
+                                <span>Chuba</span>
+                            </div>
+                            <div id="kov">
+                                <span>kov</span>
+                            </div>
+                        </div>
+                        <div className={cls.AboutYear}>
+                            <div id="year">
+                                <span>22 y.o</span>
+                            </div>
+                        </div>
+                        <div className={cls.AboutLocation}>
+                            <div id="city">
+                                <span>Saratov,</span>
+                            </div>
+                            <div className={cls.Russia} id="rus">
+                                <span>Russia</span>
+                            </div>
+                        </div>
                     </div>
-                    <div className={cls.Stack}>
-                        <h1>Technical skills</h1>
-                        <div className={cls.StackItem}>HTML</div>
-                        <div className={cls.StackItem}>CSS</div>
-                        <div className={cls.StackItem}>SASS</div>
-                        <div className={cls.StackItem}>JavaScript</div>
-                        <div className={cls.StackItem}>TypeScript</div>
-                        <div className={cls.StackItem}>React</div>
-                        <div className={cls.StackItem}>Redux</div>
-                        <div className={cls.StackItem}>Webpack</div>
+                    <div id="stack" className={cls.Stack} ref={rightRef}>
+                        <h1 className={cls.StackTitle}>Technical skills</h1>
+                        <div className={cls.StackContainerOne}>
+                            <div className={cls.StackItem}>HTML</div>
+                            <div className={cls.StackItem}>CSS</div>
+                            <div className={cls.StackItem}>SASS</div>
+                            <div className={cls.StackItem}>JavaScript</div>
+                        </div>
+                        <div className={cls.StackContainerTwo}>
+                            <div className={cls.StackItem}>TypeScript</div>
+                            <div className={cls.StackItem}>React</div>
+                            <div className={cls.StackItem}>Redux</div>
+                            <div className={cls.StackItem}>Webpack</div>
+                        </div>
+                    </div>
+                    <div id="links" className={cls.Links} ref={rightRef}>
+                        <a href="http://github.com/fornara">GitHub</a>
+                        <a href="https://t.me/fornara_the_great">Telegram</a>
                     </div>
                     <div className={cls.Swipe}>Swipe</div>
                 </div>
