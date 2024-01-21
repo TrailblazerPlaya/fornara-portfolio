@@ -101,7 +101,6 @@ export const SlideOne = () => {
                         <a href="http://github.com/fornara">GitHub</a>
                         <a href="https://t.me/fornara_the_great">Telegram</a>
                     </div>
-                    <div className={cls.Swipe}>Swipe</div>
                 </div>
             </div>
         </div>
