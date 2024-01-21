@@ -8,6 +8,7 @@ import "swiper/scss/autoplay";
 import "swiper/scss/pagination";
 import { SlideOne } from "../../component/Slide/SlideOne";
 import { SlideTwo } from "../../component/Slide/SlideTwo";
+import kurapika from "/public/assets/kurapika.png";
 const FornaraSwiper = () => {
     const heroRef = useRef();
     useEffect(() => {
@@ -34,7 +35,7 @@ const FornaraSwiper = () => {
             modules={[Pagination, Autoplay, Mousewheel]}
         >
             <div id="hero" ref={heroRef}>
-                <img src="/assets/kurapika.png" className={cls.Hero} />
+                <img src={kurapika} className={cls.Hero} />
             </div>
             <div className={cls.SwiperWrapper}>
                 <SwiperSlide>
